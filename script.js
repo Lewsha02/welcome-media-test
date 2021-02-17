@@ -22,8 +22,7 @@ modalClose.addEventListener('click', () => {
 });
 
 const formButtom = document.querySelector('button[type="submit"]');
-formButtom.addEventListener('click', (event) => {
-	event.preventDefault();
+formButtom.addEventListener('click', () => {
 	
 	const userDateEl = document.getElementById('childBirthday');
 	const userDate = new Date(userDateEl.value);
